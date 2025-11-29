@@ -1,7 +1,7 @@
 #  Library AI Agent
 
 This project is a small full-stack system that simulates a **library help desk AI agent**.  
-The agent chats with users and can **search books, create orders, update stock, check inventory, and more** using real database operations.
+The agent chats with users and can search books, create orders, update stock, and check inventory
 
 It uses:
 - **SQLite** for data  
@@ -22,7 +22,7 @@ Defines all tables used in the library system:
 - `messages` 
 - `tool_calls` 
 
-Includes **primary keys**, **foreign keys**, and table relationships.
+Includes table relationships.
 
 ### **seed.sql**
 Inserts sample books, customers, and order data.
@@ -116,7 +116,7 @@ A simple web UI:
 pip install -r requirements.txt
 
 ### 2️-Set up environment variables
-Copy `.env.example` → `.env` and add:
+Copy `.env.example` to `.env` and add:
 GOOGLE_API_KEY=your_api_key_here
 
 ### 3️-Build the database
@@ -137,7 +137,7 @@ Open `app/index.html` in your browser.
 - agent: OK. I've created order #11 for customer 2. The stock of Clean Code has been updated. There is now 1 copy left. The total amount is $150.
 
 ## Search Books
-- user: list the books by Eric Matthes
+- user: List the books by Eric Matthes
 - agent: I found one book by Eric Matthes: Python Crash Course. It is in stock with 20 copies and costs $29.99.
 
 ## Restock Book
@@ -145,5 +145,6 @@ Open `app/index.html` in your browser.
 - agent: OK. I've restocked 'The Pragmatic Programmer'. New stock: 18 copies.
 
 ## Order Status
-- user: show me the status of order 10
+- user: Show me the status of order 10
+
 - agent: Order #10 status: Completed, Total: $92.99, Books: Clean Code, Effective Java
