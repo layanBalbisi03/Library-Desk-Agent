@@ -108,28 +108,8 @@ FastAPI backend that:
 A simple web UI:
 - **index.html** : Chat interface  
 - **style.css** : Simple layout and theme  
-- **script.js** : Sends requests to FastAPI, displays responses  
-
-#  Running the Project
-
-### 1️-Install dependencies
-pip install -r requirements.txt
-
-### 2️-Set up environment variables
-Copy `.env.example` to `.env` and add:
-GOOGLE_API_KEY=your_api_key_here
-
-### 3️-Build the database
-cd db
-python init.py
-
-### 4️-Start backend server
-cd server
-python main.py
-
-### 5️-Open the UI  
-Open `app/index.html` in your browser.
-
+- **script.js** : Sends requests to FastAPI, displays responses
+- 
 #  Example Outputs
 
 ## Create Order
@@ -148,3 +128,4 @@ Open `app/index.html` in your browser.
 - user: Show me the status of order 10
 
 - agent: Order #10 status: Completed, Total: $92.99, Books: Clean Code, Effective Java
+
